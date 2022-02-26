@@ -1,0 +1,2 @@
+add_subdirectory(simple_argparse)
+add_subdirectory(string_utils)
