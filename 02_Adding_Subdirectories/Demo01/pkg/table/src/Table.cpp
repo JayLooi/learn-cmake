@@ -76,16 +76,17 @@ namespace Table
 
         std::string entry;
         unsigned int len;
-        for (auto row : this->entries)
+        for (unsigned int i = 0; i < num_of_row; ++i)
         {
             std::cout << "|";
-            for (unsigned int i = 0; i < num_of_col; ++i)
+            auto row = this->entries[i];
+            for (unsigned int j = 0; j < num_of_col; ++j)
             {
-                entry = row[i];
+                entry = row[j];
                 len = entry.length();
-                if (len < col_width[i])
+                if (len < col_width[j])
                 {
-                    entry.insert(len, col_width[i] - len, ' ');
+                    entry.insert(len, col_width[j] - len, ' ');
                 }
                 std::cout << entry << "|";
             }
