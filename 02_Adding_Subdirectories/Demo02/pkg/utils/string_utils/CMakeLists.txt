@@ -1,6 +1,9 @@
 list(
-    APPEND SOURCE_FILES
+    APPEND SOURCE_FILES_LIST
     ${CMAKE_CURRENT_LIST_DIR}/src/string_utils.cpp
 )
 
-include_directories("${CMAKE_CURRENT_LIST_DIR}/include")
+list(
+    APPEND INCLUDE_DIRS_LIST
+    "${CMAKE_CURRENT_LIST_DIR}/include"
+)

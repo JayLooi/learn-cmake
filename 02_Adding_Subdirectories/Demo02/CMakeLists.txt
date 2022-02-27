@@ -8,8 +8,10 @@ project(
 
 include(pkg/CMakeLists.txt)
 
+include_directories(${INCLUDE_DIRS_LIST})
+
 add_executable(
     ${PROJECT_NAME}
     app.cpp
-    ${SOURCE_FILES}
+    ${SOURCE_FILES_LIST}
 )
