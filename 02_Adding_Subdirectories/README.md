@@ -15,3 +15,25 @@ In this part, there will be 3 demo for different methods to handle multi-directo
    - Use `include` command to traverse through all CMakeLists.txt in each subdirectory
 3. Demo03
    - Use `add_subdirectory` command to traverse through all CMakeLists.txt in each subdirectory
+
+<u> **The Demo project structure**: </u>
+```
+├── pkg
+│   ├── table
+│   │   ├── include
+│   │   │   └── Table.h
+│   │   └── src
+│   │       └── Table.cpp
+│   └── utils
+│       ├── simple_argparse
+│       │   ├── include
+│       │   │   └── simple_argparse.h
+│       │   └── src
+│       │       └── simple_argparse.cpp
+│       └── string_utils
+│           ├── include
+│           │   └── string_utils.h
+│           └── src
+│               └── string_utils.cpp
+└── app.cpp
+```
