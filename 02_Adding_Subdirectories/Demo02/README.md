@@ -55,7 +55,7 @@ make
 ### Execute compiled program
 
 ```
-./cmakeSubDirDemo01 5 3 --entries "A,B,A XOR B;0,0,0;0,1,1;1,0,1;1,1,0"
+./cmakeSubDirDemo02 5 3 --entries "A,B,A XOR B;0,0,0;0,1,1;1,0,1;1,1,0"
 ```
 ### Output
 ```
