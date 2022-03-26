@@ -7,7 +7,7 @@ The build system used in this repo is `GNU Make`.
 ## Learning stages
 - [x] Getting Started
 - [x] Adding Subdirectories
-- [ ] Adding Libraries
+- [x] Adding Libraries
 - [ ] Control Flow
 - [ ] Functions
 - [ ] Macros
