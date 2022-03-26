@@ -6,7 +6,7 @@ Often, in an organisation, there will be more than one project to be developed. 
 
 However, the CMake strategies used in [02_Adding_Subdirectories](https://github.com/JayLooi/learn-cmake/tree/master/02_Adding_Subdirectories) couldn't help in the modules reusability because the module-level **CMakeLists.txt** would need to be modified or even rewritten to adapt the differences in another project. 
 
-In order to reduce the effort of reusing/porting the modules in another project, each module is treated as a library with the help of CMake command `add_library`. 
+In order to reduce the effort of reusing/porting the modules in another project, each module is treated as a library with the help of CMake command [`add_library`](https://cmake.org/cmake/help/latest/command/add_library.html). 
 
 <u> **The Demo project structure**: </u>
 ```
@@ -82,8 +82,9 @@ make
 
 In the `03_Adding_Library/build/` dir: 
 
-```
-rm -r *
+```bash
+# if `cmake ..` was invoke previous, the files in build/ directory need to be removed with command `rm -r *`
+
 cmake ../Lib
 make <Lib-name>
 ```
